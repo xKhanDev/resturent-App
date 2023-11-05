@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Tilt Neon', sans-serif; */
+}
+
+body {
+    background-color: #172D13;
+}
+/* -----------------------------------Navbar------------------------------------------- */
+nav{
+    margin: 1.5rem auto;
+    width: 100%;
+}
+nav ul{
+    text-align: center;
+    box-shadow: 1px 1px 5px #6BB77B;
+    width: 50%;
+    line-height: 8vh;
+    padding: 5px;
+    position: relative;
+    left: 25%;
+    border-radius: 10px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0px 20px;
+}
+nav a{
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+nav a:hover{
+    border-bottom: 2px solid white;
+}
+
+/* -------------------------------------Section---------------------------------------- */
+/* Hover effect: #6BB77B */
+/* BTN background: #D76F3; */
+.main-conatiner {
+    width: 90%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card-container {
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 100%;
+    height: 75vh;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0.2px 0.2px 5px white;
+    margin: 10px 5px;
+    overflow: hidden;
+}
+.card:hover{
+    background-color: #6BB77B;
+    box-shadow: none;
+}
+.card-body {
+    padding: 20px;
+}
+
+.card-number {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 1px 0.8px 5px white;
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+}
+
+.card-author {
+    text-align: left;
+    margin-top: 5px;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 15px;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.card-body p {
+    font-size: 10px;
+    align-items: center;
+    text-transform: capitalize;
+    margin-top: 6px;
+    width: 80%;
+}
+
+.card-read {
+    display: block;
+    text-align: right;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.card-media {
+    display: block;
+    width: 100%;
+    height: 200px;
+    padding: 0px 20px;
+    margin-top: -20px;
+}
+
+.btn {
+    background-color: #a7490f;
+    text-align: center;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #D76F30;
+}
+
+.card-tag {
+    padding: 3px 5px;
+    font-size: 0.8rem;
+    width: 120px;
+    line-height: 5vh;
+    position: absolute;
+    bottom: 25px;
+    right: 14px;
+}
+/* --------------------------FOOTER CSS--------------------------- */
+.footer{
+    width: 90%;
+    height: 45vh;
+    border-radius: 10px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+.footer-lis ul li{
+    margin: 10px 0px;
+}
+.footer-lis ul li a{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    transition: .2s;
+    padding: 5px 8px;
+}
+.footer-lis li a:hover{
+    box-shadow:0px .5px 5px #6BB77B;
+}
+.footer-lis{
+    display: flex;
+    width: 100%;
+}
+.first{
+    text-align: center;
+    width: 30%;
+}
+.second{
+    text-align: center;
+    width: 30%;
+}
+.footer-para{
+    margin-bottom: -10;
+}
+#copyright label{
+   font-size: 1.3rem;
+   color: yellow;
+   border-bottom:2px solid #6BB77B;
+}
+/* ----------------------------------------- */
+@media (max-width: 768px) {
+    .card {
+        width: 95%;
+        height: 65vh;
+    }
+
+    .card-number {
+        width: 30px;
+        height: 30px;
+        padding: 3px;
+    }
+
+    .card-media {
+        height: 154px;
+    }
+
+    .card-tag {
+        width: 100px;
+        line-height: 25px;
+        position: absolute;
+        bottom: 15px;
+        right: 30px;
+    }
+    .card-title{
+        margin-top: 10px;
+
+    }
+    .nav ul{
+        font-size: 0.7rem;
+        display: flex;
+        flex-direction: row;
+        left: 1%;
+        width: 95%;
+        line-height: 4vh;
+        margin: 0px auto;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+        display: inline-block;
+        margin: 0px 25px;
+    }
+    .nav a{
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .card{
+        height: 42vh;
+    }
+    .nav ul{
+        width: 86%;
+        left: 6.7%;
+    }
+}
